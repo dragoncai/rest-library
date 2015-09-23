@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rest-chat-client/rest-chat-client.iml" filepath="$PROJECT_DIR$/rest-chat-client/rest-chat-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-chat-server/rest-chat-server.iml" filepath="$PROJECT_DIR$/rest-chat-server/rest-chat-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-chat-service.iml" filepath="$PROJECT_DIR$/rest-chat-service.iml" />
+    </modules>
+  </component>
+</project>
+

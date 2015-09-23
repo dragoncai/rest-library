@@ -1,0 +1,11 @@
+pop\rtbi\labs\resource\OldAuthorsResource.class
+pop\rtbi\labs\resource\OldAuthorResource.class
+pop\rtbi\labs\representation\CustomLink.class
+pop\rtbi\labs\resource\OldBooksResource.class
+pop\rtbi\labs\OldLibraryService.class
+pop\rtbi\labs\resource\OldBookResource.class
+pop\rtbi\labs\representation\AuthorsRepresentation.class
+pop\rtbi\labs\representation\BooksRepresentation.class
+pop\rtbi\labs\resource\RootResource.class
+pop\rtbi\labs\OldLibraryPaths.class
+pop\rtbi\labs\representation\ResourcesSelfLinker.class

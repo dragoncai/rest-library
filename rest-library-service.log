@@ -1,0 +1,17 @@
+16:00:00.237 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: expandEntityReferences defaults to false
+16:00:00.239 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: enableSecureProcessingFeature defaults to true
+16:00:00.239 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: disableDTDs defaults to true
+16:00:00.243 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: expandEntityReferences defaults to false
+16:00:00.243 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: enableSecureProcessingFeature defaults to true
+16:00:00.243 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: disableDTDs defaults to true
+16:00:00.284 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Deploying javax.ws.rs.core.Application: class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+16:00:00.286 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.JsonProvider from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+16:00:00.287 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding class resource pop.rtbi.labs.controller.AuthorsController from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+16:00:00.288 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding class resource pop.rtbi.labs.controller.PublishersController from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+16:00:00.288 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.NotFoundExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+16:00:00.288 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding class resource pop.rtbi.labs.controller.WorksController from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+16:00:00.288 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.DefaultExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+16:00:00.288 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.BadRequestExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+16:00:00.288 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.ConflictExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+16:00:00.289 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.XmlProvider from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+16:01:06.208 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books

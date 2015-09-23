@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: pop.rtbi.labs.resource.OldBookResourceTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 sec

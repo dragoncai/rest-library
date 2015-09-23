@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: pop.rtbi.labs:library-dao:0.0.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pop/rtbi/labs/library-dao/0.0.1/library-dao-0.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/library-dao/library-dao-0.0.1-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pop/rtbi/labs/library-dao/0.0.1/library-dao-0.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/library-dao/library-dao-0.0.1-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pop/rtbi/labs/library-dao/0.0.1/library-dao-0.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

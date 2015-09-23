@@ -1,0 +1,254 @@
+11:34:33.780 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: expandEntityReferences defaults to false
+11:34:33.782 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: enableSecureProcessingFeature defaults to true
+11:34:33.782 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: disableDTDs defaults to true
+11:34:33.784 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: expandEntityReferences defaults to false
+11:34:33.784 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: enableSecureProcessingFeature defaults to true
+11:34:33.785 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: disableDTDs defaults to true
+11:34:33.815 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Deploying javax.ws.rs.core.Application: class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+11:34:33.817 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.JsonProvider from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+11:34:33.818 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding class resource pop.rtbi.labs.controller.AuthorsController from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+11:34:33.818 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding class resource pop.rtbi.labs.controller.PublishersController from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+11:34:33.818 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.NotFoundExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+11:34:33.818 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding class resource pop.rtbi.labs.controller.WorksController from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+11:34:33.819 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.DefaultExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+11:34:33.819 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.BadRequestExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+11:34:33.819 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.ConflictExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+11:34:33.819 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.XmlProvider from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+11:34:45.034 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /
+11:34:45.048 [pool-3-thread-4] ERROR o.j.r.p.server.netty.RequestHandler - Unexpected
+org.jboss.resteasy.spi.UnhandledException: org.jboss.resteasy.core.NoMessageBodyWriterFoundFailure: Could not find MessageBodyWriter for response object of type: com.murex.rtbi.ErrorResource of media type: application/octet-stream
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:157) ~[resteasy-jaxrs-3.0.11.Final.jar:na]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:176) ~[resteasy-jaxrs-3.0.11.Final.jar:na]
+	at org.jboss.resteasy.plugins.server.netty.RequestDispatcher.service(RequestDispatcher.java:83) ~[resteasy-netty-3.0.11.Final.jar:na]
+	at org.jboss.resteasy.plugins.server.netty.RequestHandler.messageReceived(RequestHandler.java:56) ~[resteasy-netty-3.0.11.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty-3.6.4.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.6.4.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.6.4.Final.jar:na]
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43) [netty-3.6.4.Final.jar:na]
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67) [netty-3.6.4.Final.jar:na]
+	at org.jboss.netty.handler.execution.OrderedMemoryAwareThreadPoolExecutor$ChildExecutor.run(OrderedMemoryAwareThreadPoolExecutor.java:314) [netty-3.6.4.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+Caused by: org.jboss.resteasy.core.NoMessageBodyWriterFoundFailure: Could not find MessageBodyWriter for response object of type: com.murex.rtbi.ErrorResource of media type: application/octet-stream
+	at org.jboss.resteasy.core.ServerResponseWriter.writeNomapResponse(ServerResponseWriter.java:67) ~[resteasy-jaxrs-3.0.11.Final.jar:na]
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:153) ~[resteasy-jaxrs-3.0.11.Final.jar:na]
+	... 12 common frames omitted
+11:34:54.356 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors
+09:49:08.711 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: expandEntityReferences defaults to false
+09:49:08.713 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: enableSecureProcessingFeature defaults to true
+09:49:08.714 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: disableDTDs defaults to true
+09:49:08.717 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: expandEntityReferences defaults to false
+09:49:08.717 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: enableSecureProcessingFeature defaults to true
+09:49:08.717 [main] DEBUG o.j.r.p.providers.DocumentProvider - Unable to retrieve config: disableDTDs defaults to true
+09:49:08.752 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Deploying javax.ws.rs.core.Application: class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+09:49:08.754 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.JsonProvider from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+09:49:08.756 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding class resource pop.rtbi.labs.controller.AuthorsController from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+09:49:08.756 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding class resource pop.rtbi.labs.controller.PublishersController from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+09:49:08.756 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.NotFoundExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+09:49:08.756 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding class resource pop.rtbi.labs.controller.WorksController from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+09:49:08.756 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.DefaultExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+09:49:08.756 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.BadRequestExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+09:49:08.756 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.exception.ConflictExceptionMapper from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+09:49:08.757 [main] INFO  o.j.resteasy.spi.ResteasyDeployment - Adding provider class pop.rtbi.labs.XmlProvider from Application class com.murex.rtbi.NettyEmbeddedServer$RESTEasyApplication
+09:49:32.133 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.563 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.598 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.634 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.662 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.702 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.723 [pool-3-thread-12] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.749 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.770 [pool-3-thread-11] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.793 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.816 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.845 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.868 [pool-3-thread-7] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.895 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.917 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.947 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:32.966 [pool-3-thread-1] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.006 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.045 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.078 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.112 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.167 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.188 [pool-3-thread-1] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.211 [pool-3-thread-12] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.233 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.258 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.273 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.292 [pool-3-thread-7] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.306 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.324 [pool-3-thread-7] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.338 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.356 [pool-3-thread-7] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.369 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.408 [pool-3-thread-2] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.422 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.440 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.457 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.470 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.487 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.500 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.527 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.540 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.559 [pool-3-thread-2] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.574 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.598 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.616 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.659 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.679 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.711 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.727 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.751 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.769 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.793 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.814 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.828 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.846 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.859 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.878 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.889 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.906 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.918 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.939 [pool-3-thread-12] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.952 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:33.972 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.014 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.028 [pool-3-thread-13] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.050 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.062 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.093 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.110 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.127 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.143 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.170 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.182 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.208 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.231 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.259 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.283 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.299 [pool-3-thread-13] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.369 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.386 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.410 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.433 [pool-3-thread-11] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.465 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.477 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.493 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.503 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.518 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.530 [pool-3-thread-7] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.551 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.563 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.595 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.609 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.630 [pool-3-thread-13] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.704 [pool-3-thread-7] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.716 [pool-3-thread-13] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.736 [pool-3-thread-2] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.751 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.768 [pool-3-thread-2] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.780 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.797 [pool-3-thread-1] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.809 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.824 [pool-3-thread-1] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.837 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.852 [pool-3-thread-1] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.870 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.884 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.941 [pool-3-thread-13] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:34.967 [pool-3-thread-12] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.000 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.017 [pool-3-thread-15] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.053 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.076 [pool-3-thread-13] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.105 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.127 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.153 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.179 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.206 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.230 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.253 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.277 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.302 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.358 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.373 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.399 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.454 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.488 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.502 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.529 [pool-3-thread-13] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.541 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.572 [pool-3-thread-13] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.597 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.625 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.652 [pool-3-thread-2] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.694 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.707 [pool-3-thread-2] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.719 [pool-3-thread-12] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.761 [pool-3-thread-12] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.774 [pool-3-thread-4] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.789 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.800 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.817 [pool-3-thread-15] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.828 [pool-3-thread-12] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.845 [pool-3-thread-2] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.856 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.873 [pool-3-thread-2] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.887 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.903 [pool-3-thread-9] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.914 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.930 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.942 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:35.992 [pool-3-thread-2] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:36.004 [pool-3-thread-6] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:36.019 [pool-3-thread-14] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:36.031 [pool-3-thread-10] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:36.043 [pool-3-thread-1] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:36.062 [pool-3-thread-5] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:36.084 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:36.100 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+09:49:36.135 [pool-3-thread-11] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /publishers
+09:49:36.162 [pool-3-thread-13] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /publishers/df39674deb5f4d0db599636cd0610f83/works
+09:49:36.188 [pool-3-thread-2] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /publishers/df39674deb5f4d0db599636cd0610f83/works
+09:49:36.218 [pool-3-thread-3] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /publishers/df39674deb5f4d0db599636cd0610f83/reviews
+09:49:36.245 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /publishers/df39674deb5f4d0db599636cd0610f83/reviews
+09:49:36.249 [pool-3-thread-15] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /publishers/df39674deb5f4d0db599636cd0610f83/reviews
+09:49:42.253 [pool-3-thread-16] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /author
+09:49:42.261 [pool-3-thread-16] ERROR o.j.r.p.server.netty.RequestHandler - Unexpected
+org.jboss.resteasy.spi.UnhandledException: org.jboss.resteasy.core.NoMessageBodyWriterFoundFailure: Could not find MessageBodyWriter for response object of type: com.murex.rtbi.ErrorResource of media type: application/octet-stream
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:157) ~[resteasy-jaxrs-3.0.11.Final.jar:na]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:176) ~[resteasy-jaxrs-3.0.11.Final.jar:na]
+	at org.jboss.resteasy.plugins.server.netty.RequestDispatcher.service(RequestDispatcher.java:83) ~[resteasy-netty-3.0.11.Final.jar:na]
+	at org.jboss.resteasy.plugins.server.netty.RequestHandler.messageReceived(RequestHandler.java:56) ~[resteasy-netty-3.0.11.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty-3.6.4.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.6.4.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.6.4.Final.jar:na]
+	at org.jboss.netty.handler.execution.ChannelUpstreamEventRunnable.doRun(ChannelUpstreamEventRunnable.java:43) [netty-3.6.4.Final.jar:na]
+	at org.jboss.netty.handler.execution.ChannelEventRunnable.run(ChannelEventRunnable.java:67) [netty-3.6.4.Final.jar:na]
+	at org.jboss.netty.handler.execution.OrderedMemoryAwareThreadPoolExecutor$ChildExecutor.run(OrderedMemoryAwareThreadPoolExecutor.java:314) [netty-3.6.4.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+Caused by: org.jboss.resteasy.core.NoMessageBodyWriterFoundFailure: Could not find MessageBodyWriter for response object of type: com.murex.rtbi.ErrorResource of media type: application/octet-stream
+	at org.jboss.resteasy.core.ServerResponseWriter.writeNomapResponse(ServerResponseWriter.java:67) ~[resteasy-jaxrs-3.0.11.Final.jar:na]
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:153) ~[resteasy-jaxrs-3.0.11.Final.jar:na]
+	... 12 common frames omitted
+09:49:45.140 [pool-3-thread-8] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors
+09:50:12.589 [pool-3-thread-17] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors
+11:08:33.480 [pool-3-thread-25] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors
+11:08:38.716 [pool-3-thread-27] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+11:09:10.308 [pool-3-thread-29] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /publishers
+11:09:17.693 [pool-3-thread-31] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors
+11:09:33.604 [pool-3-thread-33] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books
+11:10:54.812 [pool-3-thread-35] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors
+11:11:27.392 [pool-3-thread-37] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors
+11:12:02.182 [pool-3-thread-42] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors
+11:24:23.994 [pool-3-thread-53] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors/a7c6388290dd4a83a9898cf064553880
+11:24:55.136 [pool-3-thread-55] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors/a7c6388290dd4a83a9898cf064553880/books
+11:24:55.260 [pool-3-thread-57] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /authors/a7c6388290dd4a83a9898cf064553880/books
+11:26:06.878 [pool-3-thread-59] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books/34761d55d6f34b75911a727f5a6953ea
+11:26:27.646 [pool-3-thread-61] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books/34761d55d6f34b75911a727f5a6953ea
+11:27:42.444 [pool-3-thread-63] DEBUG o.j.r.core.SynchronousDispatcher - PathInfo: /books/34761d55d6f34b75911a727f5a6953ea
