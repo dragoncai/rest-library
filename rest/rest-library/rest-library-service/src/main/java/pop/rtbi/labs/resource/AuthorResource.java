@@ -18,12 +18,12 @@ import java.util.Map;
 @XmlRootElement(name = "author")
 public class AuthorResource extends LinkedResource {
    public AuthorResource(UriInfo uriInfo, IAuthor author) {
-      super(uriInfo.getBaseUriBuilder().clone().path(AuthorsController.class).path(author.getId()));
+      super(uriInfo.getBaseUriBuilder().clone().path(AuthorsController.class).path(author.getId()).build());
       Map<String, Object> entityMap = new LinkedHashMap<>();
       entityMap.put("id", author.getId());
       entityMap.put("name", author.getName());
       entityMap.put("type", author.getClass().getSimpleName().toLowerCase());
-      entityMap.put("books", new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(AuthorsController.class).path(author.getId()).path("books")));
+      entityMap.put("books", new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(AuthorsController.class).path(author.getId()).path("books").build()));
       put(ENTITY, entityMap);
    }
 }

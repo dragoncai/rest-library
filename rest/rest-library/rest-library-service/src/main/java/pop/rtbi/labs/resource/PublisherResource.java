@@ -29,7 +29,7 @@ public class PublisherResource extends LinkedResource {
    private final DefaultQueryBean queryBean;
 
    public PublisherResource(UriInfo uriInfo, Publisher publisher, DefaultQueryBean queryBean) {
-      super(uriInfo.getBaseUriBuilder().clone().path(PublishersController.class).path(publisher.getId()));
+      super(uriInfo.getBaseUriBuilder().clone().path(PublishersController.class).path(publisher.getId()).build());
 
       this.publisher = publisher;
       this.uriInfo = uriInfo;
@@ -61,7 +61,7 @@ public class PublisherResource extends LinkedResource {
    }
 
    private LinkedResource buildLinkedResource(Class<?> resource) {
-      return new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(PublishersController.class).path(publisher.getId()).path(resource));
+      return new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(PublishersController.class).path(publisher.getId()).path(resource).build());
    }
 
    private CollectionResource createCollectionResource(List collect, String listName) {
@@ -83,7 +83,7 @@ public class PublisherResource extends LinkedResource {
    }
 
    private Function<Map.Entry<Work, List<Review>>, SimpleEntry<LinkedResource, List<Review>>> getMapFunctionForReviews() {
-      return entry -> new SimpleEntry<>(new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(WorksController.class).path(entry.getKey().getId())), entry.getValue());
+      return entry -> new SimpleEntry<>(new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(WorksController.class).path(entry.getKey().getId()).build()), entry.getValue());
    }
 
    private Function<Map.Entry<Work, List<Review>>, SimpleEntry<BookResource, List<Review>>> getMapFunctionForReviewsExpanded() {

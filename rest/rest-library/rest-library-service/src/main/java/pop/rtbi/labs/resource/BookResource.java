@@ -20,14 +20,14 @@ import java.util.Map;
 @XmlRootElement(name = "book")
 public class BookResource extends LinkedResource {
    public BookResource(UriInfo uriInfo, Work work, List<String> expand) {
-      super(uriInfo.getBaseUriBuilder().clone().path(WorksController.class).path(work.getId()));
+      super(uriInfo.getBaseUriBuilder().clone().path(WorksController.class).path(work.getId()).build());
       Map<String, Object> entityMap = new LinkedHashMap<>();
       entityMap.put("id", work.getId());
       entityMap.put("title", work.getTitle());
       if (expand != null && expand.contains("author")) {
          entityMap.put("author", new AuthorResource(uriInfo, work.getAuthor()));
       } else {
-         entityMap.put("author", new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(AuthorsController.class).path(work.getAuthor().getId())));
+         entityMap.put("author", new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(AuthorsController.class).path(work.getAuthor().getId()).build()));
       }
       put(ENTITY, entityMap);
    }

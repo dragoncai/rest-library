@@ -62,7 +62,7 @@ public class AuthorsController {
       }
       IAuthor duplicatedAuthor = authorDAO.getDuplicatedAuthor(author);
       if (duplicatedAuthor != null) {
-         throw new ConflictException(new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(AuthorsController.class).path(duplicatedAuthor.getId())));
+         throw new ConflictException(new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(AuthorsController.class).path(duplicatedAuthor.getId()).build()));
       }
 
       String id = authorDAO.createAuthor(author);

@@ -58,7 +58,7 @@ public class WorksController {
       Book book1 = book;
       Work duplicatedBook = workDAO.getDuplicatedBook(book1);
       if (duplicatedBook != null) {
-         throw new ConflictException(new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(WorksController.class).path(duplicatedBook.getId())));
+         throw new ConflictException(new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(WorksController.class).path(duplicatedBook.getId()).build()));
       }
 
       IAuthor duplicatedAuthor = authorDAO.getDuplicatedAuthor(book1.getAuthor());

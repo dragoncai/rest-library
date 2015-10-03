@@ -67,7 +67,7 @@ public class PublisherReviewsControllerTest extends AbstractServiceTest {
 
    private AbstractMap.SimpleEntry<LinkedResource, List<Review>> expectedReviews(Work work, Review... reviews) {
        UriBuilder path = uriInfo.getBaseUriBuilder().clone().path(WorksController.class).path(work.getId());
-       return new AbstractMap.SimpleEntry<>(new LinkedResource(path), createListOfReviews(reviews));
+       return new AbstractMap.SimpleEntry<>(new LinkedResource(path.build()), createListOfReviews(reviews));
    }
 
    private void populateWorks(Work... work) {

@@ -1,5 +1,6 @@
 package com.murex.rtbi;
 
+import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
 import java.util.LinkedHashMap;
 
@@ -19,6 +20,15 @@ public class LinkedResource extends LinkedHashMap<String, Object> implements ILi
 
    public LinkedResource(URI href, Object entity) {
       this(href);
+      put(ENTITY, entity);
+   }
+
+   public LinkedResource(UriBuilder href) {
+      put(HREF, href.build());
+   }
+
+   public LinkedResource(UriBuilder href, Object entity) {
+      this(href.build());
       put(ENTITY, entity);
    }
 

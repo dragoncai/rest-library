@@ -66,7 +66,7 @@ public class PublishersController {
       Publisher publisher = postPublisher.getPublisher();
       Publisher duplicatedPublisher = publisherDAO.getDuplicatedPublisher(publisher);
       if (duplicatedPublisher != null) {
-         throw new ConflictException(new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(PublishersController.class).path(duplicatedPublisher.getId())));
+         throw new ConflictException(new LinkedResource(uriInfo.getBaseUriBuilder().clone().path(PublishersController.class).path(duplicatedPublisher.getId()).build()));
       }
       publisherDAO.createPublisher(publisher);
       DefaultQueryBean queryBean = new DefaultQueryBean();
